@@ -1,0 +1,16 @@
+
+<link rel="stylesheet" href="/static/content/style.css">
+{% extends "content/base.html" %}
+
+{% block header %}
+    <h1>{{ book.title }}</h1>
+{% endblock %}
+
+{% block main %}
+    <p><strong>Autor:</strong> {{ book.author }}</p>
+    <p><strong>Rok vydání:</strong> {{ book.year }}</p>
+    <p>{{ book.summary }}</p>
+    <img src="{{ book.image }}" alt="{{ book.title }}">
+    <p><strong>Žánr:</strong> {{ book.genre }}</p>
+    <p><a href="{{ book.link }}">Odkaz na knihu</a></p>
+{% endblock %}

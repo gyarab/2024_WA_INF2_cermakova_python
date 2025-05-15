@@ -1,0 +1,68 @@
+[
+  {
+    "model": "content.genre",
+    "pk": 1,
+    "fields": {
+      "name": "Fantasy",
+      "info": "Žánr s magií, kouzly a nadpřirozenými prvky."
+    }
+  },
+  {
+    "model": "content.genre",
+    "pk": 2,
+    "fields": {
+      "name": "Román",
+      "info": "Dlouhá prozaická beletrie se složitým dějem a postavami."
+    }
+  },
+  {
+    "model": "content.author",
+    "pk": 1,
+    "fields": {
+      "name": "J.K. Rowling",
+      "birth": "31. července 1965",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/J._K._Rowling_2010.jpg",
+      "bio": "Britská autorka slavné série o Harrym Potterovi."
+    }
+  },
+  {
+    "model": "content.author",
+    "pk": 2,
+    "fields": {
+      "name": "Jane Austen",
+      "birth": "16. prosince 1775",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/CassandraAusten-JaneAusten%28c.1810%29_hires.jpg",
+      "bio": "Anglická spisovatelka, známá svými romantickými romány."
+    }
+  },
+  {
+    "model": "content.book",
+    "pk": 1,
+    "fields": {
+      "title": "Harry Potter a Kámen mudrců",
+      "summary": "První kniha série o mladém čaroději Harrym Potterovi.",
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/HP1cover.jpg",
+      "year": "1997",
+      "link": "https://cs.wikipedia.org/wiki/Harry_Potter_a_K%C3%A1men_mudrc%C5%AF",
+      "author": 1,
+      "genres": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "content.book",
+    "pk": 2,
+    "fields": {
+      "title": "Pýcha a předsudek",
+      "summary": "Román o lásce, pýše a společenských předsudcích.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/PrideAndPrejudiceTitlePage.jpg/800px-PrideAndPrejudiceTitlePage.jpg",
+      "year": "1813",
+      "link": "https://cs.wikipedia.org/wiki/P%C3%BDcha_a_p%C5%99edsudek",
+      "author": 2,
+      "genres": [
+        2
+      ]
+    }
+  }
+]

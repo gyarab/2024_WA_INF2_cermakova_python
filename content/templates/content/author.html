@@ -1,0 +1,13 @@
+
+<link rel="stylesheet" href="/content/static/content/style.css">
+{% extends "content/base.html" %}
+
+{% block header %}
+    <h1>{{ author.name }}</h1>
+{% endblock %}
+
+{% block main %}
+    <img src="{{ author.image }}" alt="{{ author.name }}">
+    <p><strong>Narozen:</strong> {{ author.birth }}</p>
+    <p>{{ author.bio }}</p>
+{% endblock %}

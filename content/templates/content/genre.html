@@ -1,0 +1,20 @@
+
+<link rel="stylesheet" href="/static/content/style.css">
+{% extends "content/base.html" %}
+
+{% block header %}
+    <h1>Žánr: {{ genre.name }}</h1>
+{% endblock %}
+
+{% block main %}
+    <p>{{ genre.info }}</p>
+
+    <h2>Knihy v tomto žánru:</h2>
+    <ul>
+        {% for book in genre.books.all %}
+            <li><a href="/book/{{ book.id }}">{{ book.title }}</a></li>
+        {% empty %}
+            <li>Žádné knihy v tomto žánru.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

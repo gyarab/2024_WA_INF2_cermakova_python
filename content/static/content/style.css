@@ -1,0 +1,48 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #d09d9d;
+    background-color: #b20a0a;
+}
+
+/* Header */
+.h1 {
+    background-color: #bb7171;
+    color: #db1cd1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Content*/
+.p {
+    background-color: #936767;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+    color: #ce1cdb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image */
+image {
+    max-height: 200px;
+    width: auto;
+}
+

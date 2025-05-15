@@ -1,0 +1,11 @@
+.venv
+
+# Python cache files
+__pycache__/
+
+# Python distribution / packaging
+dist/
+build/
+*.egg-info/
+
+*.sqlite3
