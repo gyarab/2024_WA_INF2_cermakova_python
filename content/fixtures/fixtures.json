@@ -16,12 +16,28 @@
     }
   },
   {
+    "model": "content.genre",
+    "pk": 3,
+    "fields": {
+      "name": "Dobrodružný román",
+      "info": "Literatura plná napětí, akce a dramatických událostí."
+    }
+  },
+  {
+    "model": "content.genre",
+    "pk": 4,
+    "fields": {
+      "name": "Filozofická literatura",
+      "info": "Díla, která přinášejí hlubší zamyšlení nad životem a lidskou existencí."
+    }
+  },
+  {
     "model": "content.author",
     "pk": 1,
     "fields": {
       "name": "J.K. Rowling",
       "birth": "31. července 1965",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/J._K._Rowling_2010.jpg",
+      "image": "https://cdn.xsd.cz/original/00abb895afbf30c7885e3db61cd2c8f4.jpg",
       "bio": "Britská autorka slavné série o Harrym Potterovi."
     }
   },
@@ -31,8 +47,28 @@
     "fields": {
       "name": "Jane Austen",
       "birth": "16. prosince 1775",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/CassandraAusten-JaneAusten%28c.1810%29_hires.jpg",
+      "image": "https://imagebox.cz.osobnosti.cz/foto/jane-austen/jane-austen.jpg",
       "bio": "Anglická spisovatelka, známá svými romantickými romány."
+    }
+  },
+  {
+    "model": "content.author",
+    "pk": 3,
+    "fields": {
+      "name": "Charles Dickens",
+      "birth": "7. února 1812",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Dickens_Gurney_head.jpg/800px-Dickens_Gurney_head.jpg",
+      "bio": "Jeden z nejvýznamnějších anglických romanopisců viktoriánské éry."
+    }
+  },
+  {
+    "model": "content.author",
+    "pk": 4,
+    "fields": {
+      "name": "Antoine de Saint-Exupéry",
+      "birth": "29. června 1900",
+      "image": "https://imagebox.cz.osobnosti.cz/foto/antoine-de-saint-exupery/antoine-de-saint-exupery.jpg",
+      "bio": "Francouzský spisovatel, letec a autor světoznámého Malého prince."
     }
   },
   {
@@ -41,13 +77,11 @@
     "fields": {
       "title": "Harry Potter a Kámen mudrců",
       "summary": "První kniha série o mladém čaroději Harrym Potterovi.",
-      "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/HP1cover.jpg",
+      "image": "https://cdn.knihcentrum.cz/99393241_harry-potter-a-kamen-mudrcu-1-dil.jpeg",
       "year": "1997",
       "link": "https://cs.wikipedia.org/wiki/Harry_Potter_a_K%C3%A1men_mudrc%C5%AF",
       "author": 1,
-      "genres": [
-        1
-      ]
+      "genres": [1]
     }
   },
   {
@@ -56,13 +90,37 @@
     "fields": {
       "title": "Pýcha a předsudek",
       "summary": "Román o lásce, pýše a společenských předsudcích.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/PrideAndPrejudiceTitlePage.jpg/800px-PrideAndPrejudiceTitlePage.jpg",
+      "image": "https://www.databazeknih.cz/img/books/48_/481101/bmid_pycha-a-predsudek-Ti9-481101.jpg",
       "year": "1813",
       "link": "https://cs.wikipedia.org/wiki/P%C3%BDcha_a_p%C5%99edsudek",
       "author": 2,
-      "genres": [
-        2
-      ]
+      "genres": [2]
+    }
+  },
+  {
+    "model": "content.book",
+    "pk": 3,
+    "fields": {
+      "title": "Oliver Twist",
+      "summary": "Příběh sirotka, který se snaží přežít v krutém světě Londýna.",
+      "image": "https://www.knihydobrovsky.cz/thumbs/book-detail/mod_eshop/produkty/41187871.jpg",
+      "year": "1838",
+      "link": "https://cs.wikipedia.org/wiki/Oliver_Twist",
+      "author": 3,
+      "genres": [3]
+    }
+  },
+  {
+    "model": "content.book",
+    "pk": 4,
+    "fields": {
+      "title": "Malý princ",
+      "summary": "Filozofická pohádka o chlapci, který cestuje a poznává jiné planety.",
+      "image": "https://cdn.albatrosmedia.cz/Images/Product/81249744/?ts=638647116161670000",
+      "year": "1943",
+      "link": "https://cs.wikipedia.org/wiki/Mal%C3%BD_princ",
+      "author": 4,
+      "genres": [4]
     }
   }
 ]

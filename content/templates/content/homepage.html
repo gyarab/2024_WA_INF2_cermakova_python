@@ -1,26 +1,26 @@
-
-<link rel="stylesheet" href="/static/content/style.css">
 {% extends "content/base.html" %}
+{% load static %}
 
 {% block header %}
-    <h1>Knihy</h1>
+<h1 class="main-title">Seznam knih</h1>
 {% endblock %}
 
 {% block main %}
-    {% for book in books %}
-        <a href="/book/{{ book.id }}"><h2>{{ book.title }}</h2></a>
-        <p>{{ book.summary }}</p>
-    {% endfor %}
+{% for book in books %}
+<a href="/book/{{ book.id }}"><h2>{{ book.title }}</h2></a>
+<p>{{ book.summary }}</p>
+{% endfor %}
 
-    <h1>Autoři</h1>
-    {% for author in author_list %}
-        <a href="/author/{{ author.id }}"><h2>{{ author.name }}</h2></a>
-        <p>{{ author.bio|truncatewords:20 }}</p>
-    {% endfor %}
+<h1>Autoři</h1>
+{% for author in author_list %}
+<a href="/author/{{ author.id }}"><h2>{{ author.name }}</h2></a>
+<p>{{ author.bio|truncatewords:20 }}</p>
+{% endfor %}
 
-    <h1>Žánry</h1>
-    {% for genre in genre_list %}
-        <a href="/genre/{{ genre.id }}"><h2>{{ genre.name }}</h2></a>
-        <p>{{ genre.info }}</p>
-    {% endfor %}
+<h1>Žánry</h1>
+{% for genre in genre_list %}
+<a href="/genre/{{ genre.id }}"><h2>{{ genre.name }}</h2></a>
+<p>{{ genre.info }}</p>
+{% endfor %}
 {% endblock %}
+

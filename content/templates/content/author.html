@@ -7,7 +7,10 @@
 {% endblock %}
 
 {% block main %}
-    <img src="{{ author.image }}" alt="{{ author.name }}">
-    <p><strong>Narozen:</strong> {{ author.birth }}</p>
+<div class="author-photo">
+    <img src="{{ author.image }}" alt="{{ author.name }}" class="author-image">
+</div>
+
+<p><strong>Narozen:</strong> {{ author.birth }}</p>
     <p>{{ author.bio }}</p>
 {% endblock %}
