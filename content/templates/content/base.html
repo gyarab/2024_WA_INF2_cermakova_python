@@ -1,15 +1,17 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Prehled knih</title>
     <meta charset="utf-8">
+    <title>Přehled knih</title>
+    <link rel="stylesheet" href="{% static 'content/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>{% block header %}{% endblock %}</h1>
-    <main>
-        {% block main %}{% endblock %}
-    </main>
+<h1>{% block header %}{% endblock %}</h1>
+<main>
+    {% block main %}{% endblock %}
+</main>
 </body>
 </html>

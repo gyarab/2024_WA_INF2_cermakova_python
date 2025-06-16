@@ -1,10 +1,17 @@
 
 from django.shortcuts import render
-from .models import Book, Genre, Author
+from .models import Book, Author, Genre
 
 def homepage(request):
     books = Book.objects.all()
-    return render(request, 'content/homepage.html', {'books': books})
+    authors = Author.objects.all()
+    genres = Genre.objects.all()
+
+    return render(request, 'content/homepage.html', {
+        'books': books,
+        'author_list': authors,
+        'genre_list': genres,
+    })
 
 def book(request, id):
     book = Book.objects.get(pk=id)
